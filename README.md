@@ -32,7 +32,7 @@ A clean copy of the official EUR-Lex text is stored in `data/CELEX_32016R0679_EN
   - LLM generation (Gemini API): **~1,330 ms** median.
 - **Scaling Bottleneck:** Exhaustive Cross-Encoder over all 444 chunks takes **18.2 seconds** per query (and projected **11.4 hours** on a 1M chunk corpus). The two-stage funnel ($N \to 10 \to 3$) maintains a constant $O(K)$ bounded cross-attention overhead.
 
-Detailed analysis and discussion are presented in **[`report/report.md`](report/report.md)** (PDF version: **[`report/report.pdf`](report/report.pdf)**).
+Detailed analysis and discussion are presented in **[`report/report.md`](report/report.md)** (PDF version: **[`report/2025201026_Assignment1.pdf`](report/2025201026_Assignment1.pdf)**).
 
 ---
 
@@ -51,7 +51,7 @@ results/                  # Generated experimental artifacts
   scaling.csv             # Complexity and runtime scaling benchmark
 report/
   report.md               # Technical report (Markdown)
-  report.pdf              # Technical report (Formatted PDF)
+  2025201026_Assignment1.pdf # Technical report (Formatted PDF)
 requirements.txt          # Python dependencies
 ```
 
