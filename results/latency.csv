@@ -1,0 +1,6 @@
+stage,median ms,p95 ms,mean ms,n
+Pipeline 1: dense retrieval (encode + FAISS top-10 + top-3),20.4,21.6,17.1,320
+Re-ranking step only (cross-encoder on 10 pairs + sort),424.0,437.8,391.8,320
+Pipeline 2: dense retrieval + re-ranking,443.8,459.0,408.8,320
+"LLM generation, Answer 1 (Gemini API)",1351.1,6807.1,2412.7,16
+"LLM generation, Answer 2 (Gemini API)",1330.0,7391.3,2269.0,16

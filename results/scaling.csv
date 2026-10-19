@@ -1,0 +1,4 @@
+collection size (chunks),CE on all chunks per query (s),dense search + CE on top-10 per query (ms),one-off offline embedding cost (s)
+444,18.22,443.8,10.2
+10000,410.33,≈ same (+ ANN search),229.7
+1000000,41032.75,≈ same (+ ANN search),22966.1

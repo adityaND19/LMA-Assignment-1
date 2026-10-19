@@ -1,0 +1,17 @@
+qid,category,query,critical chunk: dense rank -> rerank rank,CE score,baseline top3,rerank top3,critical in baseline top3,critical in rerank top3,outcome
+Q01,keyword_trap,Can companies share user passwords with third parties?,"C184: 433 -> —, C185: 270 -> —, C186: 79 -> —, C187: 5 -> 1",C187: -7.24,C107 C059 C005,C187 C107 C005,False,True,RE-RANK RESCUE
+Q02,role_limit,Can a data processor hire another subcontractor without permission?,"C178: 261 -> —, C259: 4 -> 1, C260: 20 -> —, C261: 199 -> —",C259: 0.59,C265 C127 C033,C259 C114 C262,False,True,RE-RANK RESCUE
+Q03,exception,Is processing sensitive data ever allowed without explicit consent?,"C207: 79 -> —, C208: 19 -> —, C209: 21 -> —, C210: 198 -> —",—,C041 C028 C052,C040 C052 C028,False,False,both miss (not in top 10)
+Q04,exception,Can a controller transfer personal data outside the EU?,C311: 5 -> 5,C311: 3.64,C120 C331 C119,C106 C121 C112,False,False,both miss (in top 10)
+Q05,negation,What is explicitly prohibited when processing children data online?,"C205: 5 -> 5, C206: 168 -> —",C205: 0.26,C060 C035 C075,C052 C068 C035,False,False,both miss (in top 10)
+Q06,negation,When is automated decision-making NOT allowed?,"C224: 3 -> 3, C246: 1 -> 2, C247: 21 -> —","C224: 0.74, C246: 3.93",C246 C077 C224,C077 C246 C224,True,True,both hit
+Q07,buried_chunk,What is data protection by design and by default?,"C253: 5 -> 1, C254: 41 -> —",C253: 8.13,C085 C091 C323,C253 C085 C084,False,True,RE-RANK RESCUE
+Q08,role_limit,Who must appoint a Data Protection Officer?,"C286: 3 -> 3, C287: 1 -> 1, C288: 2 -> 2","C286: 5.35, C287: 6.86, C288: 5.38",C287 C288 C286,C287 C288 C286,True,True,both hit
+Q09,buried_chunk,What information must be provided when a person requests access to their data?,"C232: 4 -> 3, C233: 24 -> —, C234: 20 -> —",C232: 2.48,C059 C066 C063,C066 C064 C232,False,True,RE-RANK RESCUE
+Q10,buried_chunk,What penalties exist for serious GDPR breaches?,"C356: 32 -> —, C415: 26 -> —, C416: 19 -> —, C417: 36 -> —",—,C092 C418 C274,C418 C420 C094,False,False,both miss (not in top 10)
+Q11,keyword_trap,How long can companies keep customer data?,"C194: 51 -> —, C195: 28 -> —, C196: 3 -> 3",C196: -5.96,C037 C064 C196,C093 C037 C196,True,True,both hit
+Q12,exception,Can personal data be processed for scientific research without consent?,"C429: 64 -> —, C430: 21 -> —, C431: 181 -> —",—,C029 C169 C168,C029 C167 C169,False,False,both miss (not in top 10)
+Q13,negation,What rights can be restricted under national law?,"C248: 1 -> 1, C249: 87 -> —, C250: 6 -> 6","C248: 3.13, C250: -4.53",C248 C159 C180,C248 C006 C004,True,True,both hit
+Q14,role_limit,What breach notification obligations apply to processors?,"C273: 1 -> 2, C274: 55 -> —",C273: 1.94,C273 C095 C263,C096 C273 C263,True,True,both hit
+Q15,buried_chunk,Under what conditions can a supervisory authority impose a temporary ban on processing?,"C353: 45 -> —, C354: 1 -> 2, C355: 29 -> —, C356: 25 -> —",C354: 4.25,C354 C132 C101,C133 C354 C132,True,True,both hit
+Q16,keyword_trap,Do users have the right to delete their account data?,"C236: 3 -> 2, C237: 2 -> 4, C238: 236 -> —, C243: 314 -> —","C236: -0.86, C237: -3.59",C067 C237 C236,C068 C236 C067,True,True,both hit
